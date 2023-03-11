@@ -1,17 +1,19 @@
-import { createPost } from "../api/posts/index.mjs";
+import { createPost } from '../api/posts/index.mjs';
 
 export function setCreatePostFormListener() {
-    const form = document.querySelector("#createPost");
+    const form = document.querySelector('#createPost');
 
     if (form) {
-        form.addEventListener("submit", (event) => {
-            event.preventDefault()
-            const form= event.target;
-            const formData = new FormData (form);
-            const post = Object.fromEntries(formData.entries())
-          
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            const post = Object.fromEntries(formData.entries());
+
+            let { title, body, tags, media } = post;
+            tags = [...tags];
             // Send it to the API
-            createPost(post)
-        })
-      }
+            createPost({ title, body, tags, media });
+        });
     }
+}
