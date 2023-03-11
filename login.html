@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Min sosiale medieplattform</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/styles.css">
+    <script src="/js/api/constants.mjs" defer type="module" ></script>
+    <script src="/js/index.mjs" defer type="module" ></script>
+    <script src="/js/handlers/login.mjs" defer type="module" ></script>
+    
+</head>
+  <body class="body">
+
+    <!--Nav-->
+    <nav class="navbar navbar-expand-md ">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Sharing life in colors</a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+    
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+       </nav>
+       <div class="container">
+        <h2>Log in</h2>
+        <form id="loginForm">
+          
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="emailInput" name="email" required pattern="^[\w\-.]+@(stud\.)?noroff\.no$" title="Only @(stud.)noroff.no domains are allowed">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="passwordInput" name="password" required minlength="8">
+          </div>
+          <button class="btn btn-primary">Log in</button>
+        </form>
+      </div>
+      
+
+
+      
+
+  </body>
+</html>

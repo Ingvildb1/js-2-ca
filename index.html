@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Min sosiale medieplattform</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/styles.css">
+</head>
+  <body class="body">
+
+    <!--Nav-->
+    <nav class="navbar navbar-expand-md ">
+        <div class="container">
+            <a href="#" class="navbar-brand">Sharing life in colors</a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+    
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="register.html" class="nav-link">Register</a>
+                  </li>
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+       </nav>
+
+ <!--Top container-->
+ <section class="top-container text-dark p-5 text-center text-sm-start">
+    <div class="container">
+        <div class="d-sm-flex">
+            <div>
+                <h1 class="h1 container-1">You have the <span>colors!</span></h1>
+                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, autem.</p>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="img/header2.jpg" alt="">
+            
+        </div>
+    </div>
+   </section>
+
+   <!--Filter og søk-->
+    <div class="container mt-4" id="search-input">
+      <div class="row">
+        <div class="col-lg-3">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-button">Search</button>
+          </form>
+         </div>
+     </div>
+    </div>
+
+
+        <!--New post-->
+        <div class="col-lg-9">
+            <form id="postForm">
+              <h4>Share your colors</h4>
+              <div class="form-group">
+                <label for="titleInput">Title</label>
+                <input type="text" class="form-control" id="titleInput" placeholder="Enter a title">
+              </div>
+              <div class="form-group">
+                <label for="subtitleInput">Subtitle</label>
+                <input type="text" class="form-control" id="subtitleInput" placeholder="Enter a subtitle">
+              </div>
+              <div class="form-group">
+                <label for="bodyInput">Content</label>
+                <textarea class="form-control" id="bodyInput" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="tagsInput">Tags</label>
+                <input type="text" class="form-control" id="tagsInput" placeholder="Enter tags separated by commas">
+              </div>
+              <div class="form-group">
+                <label for="mediaInput">Media URL</label>
+                <input type="text" class="form-control" id="mediaInput" placeholder="Enter the URL of the media">
+              </div>
+              <button type="submit" class="btn btn-outline-success">Publish</button>
+              <div id="postsContainer"></div>
+            </form>
+          </div>
+          
+
+       
+                    
+        <!--Posts feed -->
+          <h4>Your feed</h4>
+            <div class="card" id="card-container">
+           
+                
+            </div>
+           
+          
+      
+        <script type="module" src="/js/index.mjs"></script>
+        </body>
+</html>
+
+
