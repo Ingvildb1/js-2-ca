@@ -15,11 +15,11 @@ export async function login(profile) {
         body: JSON.stringify(profile)
     })
 
-    const { accessToken, ...user } = await response.json()
+    const { accessToken, ...user } = await response.json();
     
-    storage.save("token", accessToken)
+    storage.save("token", accessToken);
 
-    storage.save("profile", user)
+    storage.save("profile", user);
 
-    alert("You are logged in!")
+    alert("You are logged in!");
 }
