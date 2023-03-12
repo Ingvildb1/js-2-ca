@@ -3,6 +3,10 @@
 ![Skjermbilde 2023-03-12 195113](https://user-images.githubusercontent.com/111681292/224566372-73d675cb-a251-433a-92e6-443c9697bdf5.png)
 
 
+
+## link to Trello
+https://trello.com/b/ggXkwgup/js2
+
 ## Goal
 
 To apply knowledge of JavaScript techniques to implement the front-end functionality for a social media application.
