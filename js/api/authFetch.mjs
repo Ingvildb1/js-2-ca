@@ -1,7 +1,7 @@
 import { load } from "../storage/index.mjs";
 
 /**
- * This export function is getting the freshest value for the token and returns the correct header thats used for API requests.
+ * This function returns an object containing the necessary headers for API requests, including the bearer token retrieved from local storage.
  * @returns Returns header.
  */
 

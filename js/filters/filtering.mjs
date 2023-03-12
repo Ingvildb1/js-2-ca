@@ -1,14 +1,13 @@
-
 import { postTemplate } from "../templates/post.mjs";
 
 const postsContainer = document.querySelector("#posts");
-
 const select = document.querySelector("#filterList");
 
 
 /**
- * 
- * @param {*} posts 
+ * Filters an array of posts based on the selected filter value
+ * @param {Array} posts - An array of post objects
+ * @return {Array} An array of post objects filtered by the selected filter value
  */
 
 export function filterPosts(posts) {
@@ -34,9 +33,9 @@ export function filterPosts(posts) {
       });
 
 /**
- * 
- * @param {*} postsFilteredByDate 
- * @param {*} postsContainer 
+ * Renders a filtered list of posts into a given container using a specified template
+ * @param {Array} postsFilteredByDate - An array of post objects filtered by date
+ * @param {HTMLElement} postsContainer - The container element where the posts will be rendered
  */
 
       function renderPostFilterTemplate(postsFilteredByDate, postsContainer) {

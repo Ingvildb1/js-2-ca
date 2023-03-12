@@ -3,7 +3,9 @@ import { getPosts } from "../api/posts/read.mjs";
 import { renderPostTemplates } from "../templates/post.mjs";
 
 /**
- *
+ * Sets up search functionality to filter posts based on search terms
+ * @function setupSearch
+ * @returns {Promise<void>}
  */
 
 export async function setupSearch() {

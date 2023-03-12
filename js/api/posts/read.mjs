@@ -4,8 +4,8 @@ import { authFetch } from "../authFetch.mjs";
 const action = "/posts";
 
 /**
- * This export function enables a logged in user to retrieve all posts created by other users or themselves from the API by sending a GET request (with token in header).
- * @returns Returns JWT.
+ * Retrieves posts with additional author, comments and reactions information
+ * @returns {Promise<Array>} An array of post objects containing author, comments, reactions information
  */
 
 export async function getPosts() {
@@ -17,7 +17,11 @@ export async function getPosts() {
 }
 
 
-
+/**
+ * Retrieves a post from the API Social service by its ID, including author, comments and reactions data.
+ * @param {number} id The ID of the post to retrieve.
+ * @returns {Promise<Object>} A Promise that resolves to the JSON representation of the post.
+ */
 
 
 export async function getPost(id) {
