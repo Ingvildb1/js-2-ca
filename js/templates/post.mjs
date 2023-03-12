@@ -43,7 +43,7 @@ export function postTemplate(postData) {
       <div>
           <button class="btn float-end me-1 delete-button small ps-2 text-dark" data-id="${postData.id}">Delete</button>
           <a href="../post/edit/?id=${postData.id}" class="btn float-end me-1 small ps-2 text-dark">Edit</a>
-          <a href="../posts/?id=${postData.id}" class="btn float-end me-1 small ps-2 text-dark">View post</a>
+          <a href="/post.html?id=${postData.id}" class="btn float-end me-1 small ps-2 text-dark">View post</a>
           </div>
     </div>
   </div>

@@ -9,7 +9,7 @@ import { renderPostTemplates } from "../templates/post.mjs";
 export async function setupSearch() {
   const posts = await getPosts();
 
-  const form = document.querySelector("#search");
+  const form = document.querySelector("form#search");
   const formInput = document.querySelector("#searchInput");
 
   if (form) {

@@ -71,8 +71,12 @@ h1 {
 }
 
 /* Filter*/
-.form-check label {
-    color: #ffff;
+.src-container {
+    margin-top: 20px;
+}
+
+.src-btn {
+    margin: auto;
 }
 
 /*posts feed*/
