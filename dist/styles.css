@@ -34,6 +34,10 @@ span {
     color: #ad1b81;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 
 
 .btn-danger {
@@ -51,10 +55,7 @@ span {
     margin-bottom: 25px;
 }
 
-.btn-outline-success:hover, .btn-outline-success:disabled, .btn-outline-success:active, .btn-outline-success:focus {
-  background-color: #d5762c85;
-  border-color: #8e1e52;
-}
+
 
 .container-1 {
     margin-top: 90px;
@@ -75,24 +76,27 @@ span {
 }
 
 /*posts feed*/
-.card-body {
-    background-color:#ffffff ;
-   
-}
 
 .card-link {
     color: #000000;
 }
 
 #posts {
-    background-color: transparent;
-    margin-left: 50px;
-    margin-right: 50px;
-
+    background-color: #ffff;
+    padding: 50px;
+    border: 10px solid;
+    border-color: #c5ae7e78;
+    color: #000000;
 }
 
 .card img {
    width: 100%;
+   margin-bottom: 50px;
+}
+
+.container h2 {
+    margin: 30px;
+    text-transform: uppercase;
 }
 
 

@@ -9,6 +9,9 @@ export async function setUpdatePostListener() {
 
 
     if (form) {
+      const button = form.querySelector("button");
+      button.disabled = true;
+
       const post = await getPost(id)
 
       form.title.value = post.title;
@@ -16,6 +19,7 @@ export async function setUpdatePostListener() {
       form.tags.value = post.tags; 
       form.media.value = post.media;
 
+     button.disabled = false;
 
 
         form.addEventListener("submit", (event) => {
@@ -24,8 +28,11 @@ export async function setUpdatePostListener() {
             const formData = new FormData (form);
             const post = Object.fromEntries(formData.entries())
           
+            let { title, body, tags, media } = post;
+            tags = [...tags];
             // Send it to the API
-            updatePost(post)
+            updatePost({ title, body, tags, media });
+      
         })
       }
     }

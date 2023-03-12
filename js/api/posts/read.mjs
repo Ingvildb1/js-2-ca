@@ -9,7 +9,7 @@ const action = "/posts";
  */
 
 export async function getPosts() {
-    const updatePostURL = `${API_SOCIAL_URL}${action}?_author=true&_comments=true&_reactions=true`
+    const updatePostURL = `${API_SOCIAL_URL}${action}?_author=true&_comments=true&_reactions=true`;
     
     const response = await authFetch(updatePostURL)
 

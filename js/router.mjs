@@ -1,9 +1,10 @@
 //import { setRegisterFormListener } from "./handlers/register.mjs"
 //import { setLoginFormListener } from "./handlers/login.mjs";
 import * as listeners from "./handlers/index.mjs";
-//import * as post from "./api/posts/index.mjs";
-//import * as templates from "./templates/index.mjs";
-//import * as postMethods from "./api/posts/index.mjs";
+import * as post from "./api/posts/index.mjs";
+import * as templates from "./templates/index.mjs";
+import * as postMethods from "./api/posts/index.mjs";
+//import { readPosts } from "./handlers/index.mjs";
 
 export default function router () {
     const path = location.pathname;
@@ -21,6 +22,13 @@ export default function router () {
         case '/edit.html':
              listeners.setUpdatePostListener()
              break;
+         case '/posts.html':
+            listeners.readPosts()
+            break;
+         case '/post.html':
+            listeners.readPost()
+            break;
+        
     }
 }
 

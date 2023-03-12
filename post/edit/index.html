@@ -1,34 +1,36 @@
 <html>
   <head>
     <title>Min sosiale medieplattform</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/styles.css">
     <script src="/js/api/constants.mjs" defer type="module" ></script>
     <script src="/js/index.mjs" defer type="module" ></script>
-    <script src="/js/handlers/login.mjs" defer type="module" ></script>
-   </head>
+    <script src="/js/handlers/register.mjs" defer type="module" ></script>
+    
+    
+</head>
   <body class="body">
 
     <!--Nav-->
     <nav class="navbar navbar-expand-md ">
       <div class="container">
-          <a href="index.html" class="navbar-brand">ConnectU</a>
+          <a href="/index.html" class="navbar-brand">ConnectU</a>
   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
   
           <div class="collapse navbar-collapse" id="navmenu">
               <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                      <a href="index.html" class="nav-link">Home</a>
+                      <a href="/index.html" class="nav-link">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a href="login.html" class="nav-link">Log In</a>
+                      <a href="/login.html" class="nav-link">Log In</a>
                   </li>
                   <li class="nav-item">
-                      <a href="register.html" class="nav-link">Register</a>
+                      <a href="/register.html" class="nav-link">Register</a>
                   </li>
                   <li class="nav-item">
-                      <a href="profile.html" class="nav-link">Profile</a>
+                      <a href="/profile.html" class="nav-link">Profile</a>
                   </li>
               </ul>
           </div>
@@ -36,25 +38,31 @@
      </nav>
 
        <div class="container">
-        <h2>Create post</h2>
-        <form id="createPost">
+        <h2>Edit post</h2>
+        <form id="editPost">
+
           <div class="form-group">
             <label for="">Title:</label>
-            <input type="text" class="form-control"  name="title" required>
+            <input type="text" class="form-control" name="title" required>
           </div>
+
           <div class="form-group">
             <label for="">Body:</label>
-            <textarea class="form-control" name="body"></textarea>
+            <textarea class="form-control" name="body" required></textarea>
           </div>
+
           <div class="form-group">
             <label for="">Tags:</label>
             <input type="text" class="form-control" name="tags">
           </div>
+
           <div class="form-group">
             <label for="">Media:</label>
             <input type="url" class="form-control" name="media">
           </div>
-          <button class="btn btn-primary">Create Post</button>
+
+          <button class="btn btn-primary">Update Post</button>
+          <a href="./posts.html" class="btn btn-two btn-lg btn-outline-success"  width="" style="padding: 8px; text-decoration: none; ";>Cancel</a>
         </form>
       </div>
       
