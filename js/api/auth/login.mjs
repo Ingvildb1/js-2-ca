@@ -1,6 +1,10 @@
 import { API_SOCIAL_URL } from "../constants.mjs";
 import * as storage from "../../storage/index.mjs";
 
+/**
+ * Logs in the user with the provided profile information
+ */
+
 const action = "/auth/login";
 const method = "post";
 

@@ -1,5 +1,23 @@
 import { removePost } from "../api/posts/index.mjs";
 
+/**
+ * 
+Creates a new HTML element for a post with the given post data.
+ * @param {Object} postData - An object containing data for the post.
+ * @param {Object} postData.author - An object containing data for the post author.
+ * @param {string} postData.author.avatar - The URL of the author's avatar image.
+ * @param {string} postData.author.name - The name of the author.
+ * @param {string} postData.created - The date the post was created.
+ * @param {string} postData.title - The title of the post.
+ * @param {string} postData.body - The body text of the post.
+ * @param {string} postData.media - The URL of any media associated with the post.
+ * @param {Object} postData._count - An object containing counts of comments and reactions for the post.
+ * @param {number} postData._count.comments - The number of comments on the post.
+ * @param {number} postData._count.reactions - The number of reactions on the post.
+ * @param {string} postData.id - The ID of the post.
+ * @returns {HTMLElement} - The HTML element for the post.
+ */
+
 export function postTemplate(postData) {
     const posts = document.createElement("div");
     posts.innerHTML += `

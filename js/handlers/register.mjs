@@ -1,5 +1,11 @@
 import { register } from "../api/auth/register.mjs";
 
+/**
+ * Adds an event listener to the register form to handle form submission and registration via API.
+ * @function
+ * @name setRegisterFormListener
+ */
+
 export function setRegisterFormListener() {
     const form = document.querySelector("#registerForm");
 

@@ -7,7 +7,6 @@ const select = document.querySelector("#filterList");
 /**
  * Filters an array of posts based on the selected filter value
  * @param {Array} posts - An array of post objects
- * @return {Array} An array of post objects filtered by the selected filter value
  */
 
 export function filterPosts(posts) {
@@ -20,9 +19,9 @@ export function filterPosts(posts) {
         } else if (filterValue === "media") {
           return post.media;
         } else if (
-          post.title.includes(filterValue) ||
-          post.body.includes(filterValue) ||
-          post.tags.includes(filterValue)
+            post.title && post.title.includes(filterValue) ||
+            post.body && post.body.includes(filterValue) ||
+            post.tags && post.tags.includes(filterValue)
         ) {
           return post;
         } else if (filterValue === "likes") {

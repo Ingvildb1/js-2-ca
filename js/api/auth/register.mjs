@@ -1,5 +1,10 @@
 import { API_SOCIAL_URL } from "../constants.mjs"
 
+/**
+ * Registers a user profile by sending a POST request to the social API URL with the provided profile data.
+ * @returns {Promise<Object>} A promise that resolves to the result of the registration request, in JSON format.
+ */
+
 const action = "/auth/register";
 const method = "post";
 

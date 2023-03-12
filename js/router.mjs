@@ -6,6 +6,10 @@ import * as templates from "./templates/index.mjs";
 import * as postMethods from "./api/posts/index.mjs";
 //import { readPosts } from "./handlers/index.mjs";
 
+/**
+ * The router function routes incoming requests to the appropriate listeners based on the current path.
+ */
+
 export default function router () {
     const path = location.pathname;
 
