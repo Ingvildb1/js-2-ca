@@ -18,6 +18,12 @@ export function setRegisterFormListener() {
             
             // Send it to the API
             register(profile)
+
+            // Alert
+            alert("You are registered!");
+
+            // Redirect to index.html
+        window.location.href = "login.html";
         })
      }
   }

@@ -10,13 +10,12 @@ export function setLoginFormListener() {
     if (form) {
         form.addEventListener("submit", (event) => {
             event.preventDefault()
-            const form= event.target;
-            const formData = new FormData (form);
-            const profile = Object.fromEntries(formData.entries())
-          
-            // Send it to the API
-            login(profile)
+            const email = document.querySelector("#emailInput").value;
+            const password = document.querySelector("#passwordInput").value;
+            const profile = { email, password };
+            login(profile);
         })
       }
     }
+
 

@@ -26,4 +26,9 @@ export async function login(profile) {
     storage.save("profile", user);
 
     alert("You are logged in!");
+
+    // Redirect to index.html
+window.location.href = "index.html";
 }
+
+
