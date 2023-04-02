@@ -28,7 +28,7 @@ export async function login(profile) {
     alert("You are logged in!");
 
     // Redirect to index.html
-window.location.href = "index.html";
+window.location.href = "home.html";
 }
 
 
